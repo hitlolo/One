@@ -1,0 +1,58 @@
+html {
+    -webkit-text-size-adjust: none; /* Never autoresize text */
+}
+body {
+    word-break: break-all;
+    font-family: HelveticaNeue;
+    padding:5px;
+    font: -apple-system-body;
+    color: #D1BBA1;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font: -apple-system-headline;
+}
+
+.time {
+    text-align: left;
+}
+
+hr {
+    border: none;
+}
+hr.hairline {
+    border-bottom: 0.5px rgb(209, 187, 161) solid;
+}
+
+.content {
+    background-color: rgba(209,187,161,0.1);
+    color: #000000;
+}
+
+strong {
+    font-weight: normal;
+}
+
+.author {
+    font:-apple-system-footnote;
+}
+
+
+
+img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 8px;
+}
+
+.head_img {
+    float: left;
+}
+
+.author_intro{
+
+}
+
