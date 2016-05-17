@@ -332,7 +332,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </objects>
-            <point key="canvasLocation" x="-26" y="-1038"/>
+            <point key="canvasLocation" x="-522" y="-1038"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OK8-oN-LOi">

@@ -40,15 +40,11 @@ strong {
 }
 
 
-
-img {
+.head_img {
     width: 50px;
     height: 50px;
     display: block;
     margin: 8px;
-}
-
-.head_img {
     float: left;
 }
 

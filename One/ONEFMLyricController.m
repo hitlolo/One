@@ -44,8 +44,8 @@ static void *lyricSongKVOKey = &lyricSongKVOKey;
     
 }
 
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     
     
     self.lyricTimer = [NSTimer scheduledTimerWithTimeInterval:0.1f
@@ -69,7 +69,7 @@ static void *lyricSongKVOKey = &lyricSongKVOKey;
 
 }
 
-- (void)viewDidDisappear:(BOOL)animated{
+- (void)viewWillDisappear:(BOOL)animated{
     
     [self.lyricTimer invalidate];
     self.lyricTimer = nil;
@@ -78,7 +78,7 @@ static void *lyricSongKVOKey = &lyricSongKVOKey;
     
     [[ONEFMPlayer sharedPlayer]removeObserver:self forKeyPath:@"status" context:lyricStatusKVOKey];
     
-    [super viewDidDisappear:animated];
+    [super viewWillDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,21 +87,6 @@ static void *lyricSongKVOKey = &lyricSongKVOKey;
 }
 
 - (void)prepare{
-//    RTSpinKitViewStylePlane,
-//    RTSpinKitViewStyleCircleFlip,
-//    RTSpinKitViewStyleBounce,
-//    RTSpinKitViewStyleWave,
-//    RTSpinKitViewStyleWanderingCubes,
-//    RTSpinKitViewStylePulse,
-//    RTSpinKitViewStyleChasingDots,
-//    RTSpinKitViewStyleThreeBounce,
-//    RTSpinKitViewStyleCircle,
-//    RTSpinKitViewStyle9CubeGrid,
-//    RTSpinKitViewStyleWordPress,
-//    RTSpinKitViewStyleFadingCircle,
-//    RTSpinKitViewStyleFadingCircleAlt,
-//    RTSpinKitViewStyleArc,
-//    RTSpinKitViewStyleArcAlt
 
     _lyricParser = [[ONEFMLyricParser alloc]init];
     self.tableView.estimatedRowHeight = 30;
@@ -208,7 +193,8 @@ static void *lyricSongKVOKey = &lyricSongKVOKey;
 
 
 - (void)updateLyric:(ONESong*)song{
-    if (song == nil || song == [NSNull null]) {
+
+    if (song == nil || [song isEqual:[NSNull null]]) {
         NSLog(@"return");
         return;
     }

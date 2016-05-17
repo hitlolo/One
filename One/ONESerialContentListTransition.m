@@ -61,7 +61,7 @@
 - (CGRect)frameOfPresentedViewInContainerView{
     // Return a rect with the same size as -sizeForChildContentContainer:withParentContainerSize:, and right aligned
     CGRect presentedViewFrame = CGRectZero;
-    CGRect containerBounds = [[self containerView] bounds];
+    //CGRect containerBounds = [[self containerView] bounds];
     
     presentedViewFrame.size = [self.presentedViewController preferredContentSize];
     presentedViewFrame.origin.x = 0;

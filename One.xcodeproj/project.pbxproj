@@ -65,6 +65,11 @@
 		CE63B8D91CB62D1700E9FAFA /* HITSlideAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63B8D71CB62D1700E9FAFA /* HITSlideAnimationManager.m */; };
 		CE63B8E01CB67DD400E9FAFA /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63B8DF1CB67DD400E9FAFA /* Gallery.storyboard */; };
 		CE63B8E31CB67E3600E9FAFA /* Reading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63B8E11CB67E3600E9FAFA /* Reading.storyboard */; };
+		CE6728261CE6B59A0001D5A7 /* ic_arrow_gray_down.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6728241CE6B59A0001D5A7 /* ic_arrow_gray_down.png */; };
+		CE6728271CE6B59A0001D5A7 /* ic_arrow_gray_up.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6728251CE6B59A0001D5A7 /* ic_arrow_gray_up.png */; };
+		CE67282B1CE6C8860001D5A7 /* HITReadColumnEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67282A1CE6C8860001D5A7 /* HITReadColumnEditorController.m */; };
+		CE67282E1CE6D3CA0001D5A7 /* HITReadColumnEditorTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67282D1CE6D3CA0001D5A7 /* HITReadColumnEditorTransition.m */; };
+		CE6728311CE763890001D5A7 /* HITReadColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6728301CE763890001D5A7 /* HITReadColumnCell.m */; };
 		CE6B59431CC072CE00F9A76B /* ONEChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B59421CC072CE00F9A76B /* ONEChannel.m */; };
 		CE6B59461CC0749300F9A76B /* ONESong.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B59451CC0749300F9A76B /* ONESong.m */; };
 		CE6B59491CC077B000F9A76B /* ONELyric.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B59481CC077B000F9A76B /* ONELyric.m */; };
@@ -85,6 +90,8 @@
 		CE7447CA1CC63CC2004C1296 /* ONERootController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7447C91CC63CC2004C1296 /* ONERootController.m */; };
 		CE75599C1CE3F05F00B07818 /* ONESearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75599B1CE3F05F00B07818 /* ONESearchController.m */; };
 		CE76B68B1CDCA0C000A5C36D /* UITableView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76B68A1CDCA0C000A5C36D /* UITableView+EmptyData.m */; };
+		CE846F391CE9625C00FF26DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE846F381CE9625C00FF26DB /* AudioToolbox.framework */; };
+		CE846F3C1CE9654A00FF26DB /* HITReadColumnStrategyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CE846F3B1CE9654A00FF26DB /* HITReadColumnStrategyProvider.m */; };
 		CEA2D1171CDD8D2F00A8C866 /* ONEFMLyricParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA2D1161CDD8D2F00A8C866 /* ONEFMLyricParser.m */; };
 		CEA2D11A1CDDDDAE00A8C866 /* ONEFMLyricCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA2D1191CDDDDAE00A8C866 /* ONEFMLyricCell.m */; };
 		CEA2D1401CDDE08D00A8C866 /* RTSpinKit9CubeGridAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA2D11E1CDDE08D00A8C866 /* RTSpinKit9CubeGridAnimation.m */; };
@@ -108,12 +115,22 @@
 		CEA911411CC1D02C005C29EE /* ONEDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA911401CC1D02C005C29EE /* ONEDateHelper.m */; };
 		CEA911531CC25AD4005C29EE /* UIScrollView+ONEScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA911521CC25AD4005C29EE /* UIScrollView+ONEScrollView.m */; };
 		CEAAA7981CC462DA001491D6 /* ONEPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAA7971CC462DA001491D6 /* ONEPageController.m */; };
+		CEAD21D61CE62FCB00D4FEF5 /* HITScrollSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAD21CD1CE62FCB00D4FEF5 /* HITScrollSegmentController.m */; };
+		CEAD21D71CE62FCB00D4FEF5 /* HITScrollSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAD21CF1CE62FCB00D4FEF5 /* HITScrollSegmentView.m */; };
+		CEAD21D81CE62FCB00D4FEF5 /* HITScrollSegmentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAD21D11CE62FCB00D4FEF5 /* HITScrollSegmentItem.m */; };
+		CEAD21D91CE62FCB00D4FEF5 /* HITReadColumnProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAD21D31CE62FCB00D4FEF5 /* HITReadColumnProvider.m */; };
+		CEAD21DA1CE62FCB00D4FEF5 /* HITReadColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAD21D51CE62FCB00D4FEF5 /* HITReadColumn.m */; };
+		CEAD21DC1CE62FD900D4FEF5 /* content.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEAD21DB1CE62FD900D4FEF5 /* content.plist */; };
 		CEB71F1B1CD97F1200437734 /* ONEFMPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB71F1A1CD97F1200437734 /* ONEFMPlaylist.m */; };
 		CEB71F1E1CD9F85800437734 /* ONEFMChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB71F1D1CD9F85800437734 /* ONEFMChannelCell.m */; };
 		CEB71F211CDAE68000437734 /* ONEFMProgressFillLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB71F201CDAE68000437734 /* ONEFMProgressFillLayer.m */; };
 		CEB71F241CDAE8D200437734 /* ONEFMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB71F231CDAE8D200437734 /* ONEFMProgressView.m */; };
 		CEB71F271CDAF94700437734 /* ONEFMProgressTrackLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB71F261CDAF94700437734 /* ONEFMProgressTrackLayer.m */; };
 		CEBCAE901CC489450009398C /* HLTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBCAE8F1CC489450009398C /* HLTreeView.m */; };
+		CEC5FAB71CE80F4300E6FD3E /* HITReadColunmHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC5FAB61CE80F4300E6FD3E /* HITReadColunmHeader.m */; };
+		CEC5FABD1CE84DA700E6FD3E /* HITReadColunmFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC5FABC1CE84DA700E6FD3E /* HITReadColunmFooter.m */; };
+		CEC5FAC11CE8588B00E6FD3E /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC5FAC01CE8588B00E6FD3E /* delete.png */; };
+		CEC5FAC41CE87C6B00E6FD3E /* HITReadColumnIndexPage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC5FAC31CE87C6B00E6FD3E /* HITReadColumnIndexPage.m */; };
 		CEC77EF91CCF0FBD00FE16D9 /* ONEBarButtonComments.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC77EF81CCF0FBD00FE16D9 /* ONEBarButtonComments.m */; };
 		CEC77EFE1CCF1A7800FE16D9 /* ONEBarButtonAudioPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC77EFD1CCF1A7800FE16D9 /* ONEBarButtonAudioPlay.m */; };
 		CEC77F0E1CCF62E000FE16D9 /* loading_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC77F021CCF62E000FE16D9 /* loading_1.png */; };
@@ -157,6 +174,9 @@
 		CEE4C0181CBF5BB100D81480 /* ONEColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE4C0171CBF5BB100D81480 /* ONEColumn.m */; };
 		CEE5F40E1CD253220006863E /* ONEBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE5F40D1CD253220006863E /* ONEBaseController.m */; };
 		CEE5F4111CD258340006863E /* ONEBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE5F4101CD258340006863E /* ONEBaseTableViewController.m */; };
+		CEF0B64B1CE974D000BC29A4 /* HITReadColumnEssayStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF0B64A1CE974D000BC29A4 /* HITReadColumnEssayStrategy.m */; };
+		CEF0B64E1CE9C0CF00BC29A4 /* HITReadColumnSerialStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF0B64D1CE9C0CE00BC29A4 /* HITReadColumnSerialStrategy.m */; };
+		CEF0B6511CE9C31900BC29A4 /* HITReadColumnQuestionStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF0B6501CE9C31900BC29A4 /* HITReadColumnQuestionStrategy.m */; };
 		E3CB62E800D2C0C6C7303098 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F16E3D50F3A71377A4F0776 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -276,6 +296,14 @@
 		CE63B8D71CB62D1700E9FAFA /* HITSlideAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITSlideAnimationManager.m; sourceTree = "<group>"; };
 		CE63B8DF1CB67DD400E9FAFA /* Gallery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
 		CE63B8E21CB67E3600E9FAFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Reading.storyboard; sourceTree = "<group>"; };
+		CE6728241CE6B59A0001D5A7 /* ic_arrow_gray_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_arrow_gray_down.png; sourceTree = "<group>"; };
+		CE6728251CE6B59A0001D5A7 /* ic_arrow_gray_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_arrow_gray_up.png; sourceTree = "<group>"; };
+		CE6728291CE6C8860001D5A7 /* HITReadColumnEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColumnEditorController.h; sourceTree = "<group>"; };
+		CE67282A1CE6C8860001D5A7 /* HITReadColumnEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColumnEditorController.m; sourceTree = "<group>"; };
+		CE67282C1CE6D3CA0001D5A7 /* HITReadColumnEditorTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColumnEditorTransition.h; sourceTree = "<group>"; };
+		CE67282D1CE6D3CA0001D5A7 /* HITReadColumnEditorTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColumnEditorTransition.m; sourceTree = "<group>"; };
+		CE67282F1CE763890001D5A7 /* HITReadColumnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColumnCell.h; sourceTree = "<group>"; };
+		CE6728301CE763890001D5A7 /* HITReadColumnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColumnCell.m; sourceTree = "<group>"; };
 		CE6B59411CC072CE00F9A76B /* ONEChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEChannel.h; sourceTree = "<group>"; };
 		CE6B59421CC072CE00F9A76B /* ONEChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONEChannel.m; sourceTree = "<group>"; };
 		CE6B59441CC0749300F9A76B /* ONESong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONESong.h; sourceTree = "<group>"; };
@@ -316,6 +344,10 @@
 		CE75599B1CE3F05F00B07818 /* ONESearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONESearchController.m; sourceTree = "<group>"; };
 		CE76B6891CDCA0C000A5C36D /* UITableView+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyData.h"; sourceTree = "<group>"; };
 		CE76B68A1CDCA0C000A5C36D /* UITableView+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmptyData.m"; sourceTree = "<group>"; };
+		CE846F381CE9625C00FF26DB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CE846F3A1CE9654A00FF26DB /* HITReadColumnStrategyProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColumnStrategyProvider.h; sourceTree = "<group>"; };
+		CE846F3B1CE9654A00FF26DB /* HITReadColumnStrategyProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColumnStrategyProvider.m; sourceTree = "<group>"; };
+		CE846F401CE96DA100FF26DB /* HITReadColumnStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColumnStrategy.h; sourceTree = "<group>"; };
 		CEA2D1151CDD8D2F00A8C866 /* ONEFMLyricParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEFMLyricParser.h; sourceTree = "<group>"; };
 		CEA2D1161CDD8D2F00A8C866 /* ONEFMLyricParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONEFMLyricParser.m; sourceTree = "<group>"; };
 		CEA2D1181CDDDDAE00A8C866 /* ONEFMLyricCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEFMLyricCell.h; sourceTree = "<group>"; };
@@ -363,6 +395,17 @@
 		CEA911521CC25AD4005C29EE /* UIScrollView+ONEScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ONEScrollView.m"; sourceTree = "<group>"; };
 		CEAAA7961CC462DA001491D6 /* ONEPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEPageController.h; sourceTree = "<group>"; };
 		CEAAA7971CC462DA001491D6 /* ONEPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONEPageController.m; sourceTree = "<group>"; };
+		CEAD21CC1CE62FCB00D4FEF5 /* HITScrollSegmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITScrollSegmentController.h; sourceTree = "<group>"; };
+		CEAD21CD1CE62FCB00D4FEF5 /* HITScrollSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITScrollSegmentController.m; sourceTree = "<group>"; };
+		CEAD21CE1CE62FCB00D4FEF5 /* HITScrollSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITScrollSegmentView.h; sourceTree = "<group>"; };
+		CEAD21CF1CE62FCB00D4FEF5 /* HITScrollSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITScrollSegmentView.m; sourceTree = "<group>"; };
+		CEAD21D01CE62FCB00D4FEF5 /* HITScrollSegmentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITScrollSegmentItem.h; sourceTree = "<group>"; };
+		CEAD21D11CE62FCB00D4FEF5 /* HITScrollSegmentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITScrollSegmentItem.m; sourceTree = "<group>"; };
+		CEAD21D21CE62FCB00D4FEF5 /* HITReadColumnProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColumnProvider.h; sourceTree = "<group>"; };
+		CEAD21D31CE62FCB00D4FEF5 /* HITReadColumnProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColumnProvider.m; sourceTree = "<group>"; };
+		CEAD21D41CE62FCB00D4FEF5 /* HITReadColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColumn.h; sourceTree = "<group>"; };
+		CEAD21D51CE62FCB00D4FEF5 /* HITReadColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColumn.m; sourceTree = "<group>"; };
+		CEAD21DB1CE62FD900D4FEF5 /* content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = content.plist; sourceTree = "<group>"; };
 		CEB71F191CD97F1200437734 /* ONEFMPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEFMPlaylist.h; sourceTree = "<group>"; };
 		CEB71F1A1CD97F1200437734 /* ONEFMPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONEFMPlaylist.m; sourceTree = "<group>"; };
 		CEB71F1C1CD9F85800437734 /* ONEFMChannelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEFMChannelCell.h; sourceTree = "<group>"; };
@@ -376,6 +419,13 @@
 		CEBCAE8B1CC485390009398C /* HLRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLRefreshView.h; sourceTree = "<group>"; };
 		CEBCAE8E1CC489450009398C /* HLTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTreeView.h; sourceTree = "<group>"; };
 		CEBCAE8F1CC489450009398C /* HLTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTreeView.m; sourceTree = "<group>"; };
+		CEC5FAB51CE80F4300E6FD3E /* HITReadColunmHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColunmHeader.h; sourceTree = "<group>"; };
+		CEC5FAB61CE80F4300E6FD3E /* HITReadColunmHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColunmHeader.m; sourceTree = "<group>"; };
+		CEC5FABB1CE84DA700E6FD3E /* HITReadColunmFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColunmFooter.h; sourceTree = "<group>"; };
+		CEC5FABC1CE84DA700E6FD3E /* HITReadColunmFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColunmFooter.m; sourceTree = "<group>"; };
+		CEC5FAC01CE8588B00E6FD3E /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		CEC5FAC21CE87C6B00E6FD3E /* HITReadColumnIndexPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColumnIndexPage.h; sourceTree = "<group>"; };
+		CEC5FAC31CE87C6B00E6FD3E /* HITReadColumnIndexPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColumnIndexPage.m; sourceTree = "<group>"; };
 		CEC77EF71CCF0FBD00FE16D9 /* ONEBarButtonComments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEBarButtonComments.h; sourceTree = "<group>"; };
 		CEC77EF81CCF0FBD00FE16D9 /* ONEBarButtonComments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONEBarButtonComments.m; sourceTree = "<group>"; };
 		CEC77EFC1CCF1A7800FE16D9 /* ONEBarButtonAudioPlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEBarButtonAudioPlay.h; sourceTree = "<group>"; };
@@ -451,6 +501,12 @@
 		CEE5F40D1CD253220006863E /* ONEBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONEBaseController.m; sourceTree = "<group>"; };
 		CEE5F40F1CD258340006863E /* ONEBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEBaseTableViewController.h; sourceTree = "<group>"; };
 		CEE5F4101CD258340006863E /* ONEBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONEBaseTableViewController.m; sourceTree = "<group>"; };
+		CEF0B6491CE974D000BC29A4 /* HITReadColumnEssayStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColumnEssayStrategy.h; sourceTree = "<group>"; };
+		CEF0B64A1CE974D000BC29A4 /* HITReadColumnEssayStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColumnEssayStrategy.m; sourceTree = "<group>"; };
+		CEF0B64C1CE9C0CE00BC29A4 /* HITReadColumnSerialStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColumnSerialStrategy.h; sourceTree = "<group>"; };
+		CEF0B64D1CE9C0CE00BC29A4 /* HITReadColumnSerialStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColumnSerialStrategy.m; sourceTree = "<group>"; };
+		CEF0B64F1CE9C31900BC29A4 /* HITReadColumnQuestionStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITReadColumnQuestionStrategy.h; sourceTree = "<group>"; };
+		CEF0B6501CE9C31900BC29A4 /* HITReadColumnQuestionStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITReadColumnQuestionStrategy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,6 +514,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE846F391CE9625C00FF26DB /* AudioToolbox.framework in Frameworks */,
 				CE2C2E901CC0EF3600001DC1 /* libsqlite3.tbd in Frameworks */,
 				E3CB62E800D2C0C6C7303098 /* libPods.a in Frameworks */,
 			);
@@ -469,6 +526,7 @@
 		35DB974668516F3AE76D2B6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE846F381CE9625C00FF26DB /* AudioToolbox.framework */,
 				CE2C2E8F1CC0EF3600001DC1 /* libsqlite3.tbd */,
 				9F16E3D50F3A71377A4F0776 /* libPods.a */,
 			);
@@ -549,6 +607,7 @@
 				CE0926B41CC72022001E860A /* Sections */,
 				CE23257E1CAE1B2500E766F2 /* Assets.xcassets */,
 				CE2325801CAE1B2500E766F2 /* LaunchScreen.storyboard */,
+				CEAD21DB1CE62FD900D4FEF5 /* content.plist */,
 				CE2325831CAE1B2500E766F2 /* Info.plist */,
 				CE2325721CAE1B2500E766F2 /* Supporting Files */,
 			);
@@ -683,6 +742,38 @@
 				CE63B8E11CB67E3600E9FAFA /* Reading.storyboard */,
 				CE4CCFAB1CCB59A5004B1E26 /* ONEReadingController.h */,
 				CE4CCFAC1CCB59A5004B1E26 /* ONEReadingController.m */,
+				CEAD21CC1CE62FCB00D4FEF5 /* HITScrollSegmentController.h */,
+				CEAD21CD1CE62FCB00D4FEF5 /* HITScrollSegmentController.m */,
+				CEC5FAC21CE87C6B00E6FD3E /* HITReadColumnIndexPage.h */,
+				CEC5FAC31CE87C6B00E6FD3E /* HITReadColumnIndexPage.m */,
+				CE6728291CE6C8860001D5A7 /* HITReadColumnEditorController.h */,
+				CE67282A1CE6C8860001D5A7 /* HITReadColumnEditorController.m */,
+				CEC5FAB51CE80F4300E6FD3E /* HITReadColunmHeader.h */,
+				CEC5FAB61CE80F4300E6FD3E /* HITReadColunmHeader.m */,
+				CEC5FABB1CE84DA700E6FD3E /* HITReadColunmFooter.h */,
+				CEC5FABC1CE84DA700E6FD3E /* HITReadColunmFooter.m */,
+				CE67282F1CE763890001D5A7 /* HITReadColumnCell.h */,
+				CE6728301CE763890001D5A7 /* HITReadColumnCell.m */,
+				CE67282C1CE6D3CA0001D5A7 /* HITReadColumnEditorTransition.h */,
+				CE67282D1CE6D3CA0001D5A7 /* HITReadColumnEditorTransition.m */,
+				CEAD21CE1CE62FCB00D4FEF5 /* HITScrollSegmentView.h */,
+				CEAD21CF1CE62FCB00D4FEF5 /* HITScrollSegmentView.m */,
+				CEAD21D01CE62FCB00D4FEF5 /* HITScrollSegmentItem.h */,
+				CEAD21D11CE62FCB00D4FEF5 /* HITScrollSegmentItem.m */,
+				CEAD21D21CE62FCB00D4FEF5 /* HITReadColumnProvider.h */,
+				CEAD21D31CE62FCB00D4FEF5 /* HITReadColumnProvider.m */,
+				CE846F3A1CE9654A00FF26DB /* HITReadColumnStrategyProvider.h */,
+				CE846F3B1CE9654A00FF26DB /* HITReadColumnStrategyProvider.m */,
+				CE846F401CE96DA100FF26DB /* HITReadColumnStrategy.h */,
+				CEF0B6491CE974D000BC29A4 /* HITReadColumnEssayStrategy.h */,
+				CEF0B64A1CE974D000BC29A4 /* HITReadColumnEssayStrategy.m */,
+				CEF0B64C1CE9C0CE00BC29A4 /* HITReadColumnSerialStrategy.h */,
+				CEF0B64D1CE9C0CE00BC29A4 /* HITReadColumnSerialStrategy.m */,
+				CEF0B64F1CE9C31900BC29A4 /* HITReadColumnQuestionStrategy.h */,
+				CEF0B6501CE9C31900BC29A4 /* HITReadColumnQuestionStrategy.m */,
+				CEAD21D41CE62FCB00D4FEF5 /* HITReadColumn.h */,
+				CEAD21D51CE62FCB00D4FEF5 /* HITReadColumn.m */,
+				CE6728281CE6B5A50001D5A7 /* arrow_image */,
 			);
 			name = Root;
 			sourceTree = "<group>";
@@ -867,6 +958,16 @@
 				CE23258D1CAE59BA00E766F2 /* HITPageViewController */,
 			);
 			name = HITLibrary;
+			sourceTree = "<group>";
+		};
+		CE6728281CE6B5A50001D5A7 /* arrow_image */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5FAC01CE8588B00E6FD3E /* delete.png */,
+				CE6728241CE6B59A0001D5A7 /* ic_arrow_gray_down.png */,
+				CE6728251CE6B59A0001D5A7 /* ic_arrow_gray_up.png */,
+			);
+			name = arrow_image;
 			sourceTree = "<group>";
 		};
 		CE6B59401CC06B0C00F9A76B /* FM */ = {
@@ -1247,8 +1348,11 @@
 				CE63B8E31CB67E3600E9FAFA /* Reading.storyboard in Resources */,
 				CE5BA68D1CD851A4001DB6C2 /* FM.storyboard in Resources */,
 				CE5BA66E1CD5EB11001DB6C2 /* Question.html in Resources */,
+				CEAD21DC1CE62FD900D4FEF5 /* content.plist in Resources */,
 				CEC77F161CCF62E000FE16D9 /* loading_9.png in Resources */,
+				CE6728271CE6B59A0001D5A7 /* ic_arrow_gray_up.png in Resources */,
 				CE1D72F91CD3090300E63CC1 /* Article.html in Resources */,
+				CE6728261CE6B59A0001D5A7 /* ic_arrow_gray_down.png in Resources */,
 				CE2C2E861CC0A1A100001DC1 /* init.sql in Resources */,
 				CEC77F141CCF62E000FE16D9 /* loading_7.png in Resources */,
 				CE63B8E01CB67DD400E9FAFA /* Gallery.storyboard in Resources */,
@@ -1262,6 +1366,7 @@
 				CEC77F0E1CCF62E000FE16D9 /* loading_1.png in Resources */,
 				CE23257D1CAE1B2500E766F2 /* Main.storyboard in Resources */,
 				CEC77F171CCF62E000FE16D9 /* loading_10.png in Resources */,
+				CEC5FAC11CE8588B00E6FD3E /* delete.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1327,19 +1432,24 @@
 				CE5BA7121CD8C7AA001DB6C2 /* NSData+DOUMappedFile.m in Sources */,
 				CE0926B81CC76B2E001E860A /* ONEMonthPickerController.m in Sources */,
 				CE2325771CAE1B2500E766F2 /* AppDelegate.m in Sources */,
+				CE6728311CE763890001D5A7 /* HITReadColumnCell.m in Sources */,
 				CED274FF1CC9A2E10009D77D /* ONEGalleryCell.m in Sources */,
 				CE5BA7031CD8C7AA001DB6C2 /* DOUAudioDecoder.m in Sources */,
 				CEA2D14F1CDDE08D00A8C866 /* RTSpinKitUtils.m in Sources */,
 				CEA2D1441CDDE08D00A8C866 /* RTSpinKitChasingDotsAnimation.m in Sources */,
 				CEA2D1171CDD8D2F00A8C866 /* ONEFMLyricParser.m in Sources */,
+				CEAD21D61CE62FCB00D4FEF5 /* HITScrollSegmentController.m in Sources */,
+				CEAD21DA1CE62FCB00D4FEF5 /* HITReadColumn.m in Sources */,
 				CEA2D1401CDDE08D00A8C866 /* RTSpinKit9CubeGridAnimation.m in Sources */,
 				CEB71F1B1CD97F1200437734 /* ONEFMPlaylist.m in Sources */,
 				CEB71F1E1CD9F85800437734 /* ONEFMChannelCell.m in Sources */,
 				CEE2DC791CCBC14D001B26AC /* ONEArticleDescriptionCell.m in Sources */,
 				CEA2D14A1CDDE08D00A8C866 /* RTSpinKitPulseAnimation.m in Sources */,
+				CE67282E1CE6D3CA0001D5A7 /* HITReadColumnEditorTransition.m in Sources */,
 				CE25A9BB1CD4A45B00DBC1A3 /* ONESerialReadingController.m in Sources */,
 				CE7447CA1CC63CC2004C1296 /* ONERootController.m in Sources */,
 				CE5BA6991CD8B699001DB6C2 /* ONEFMLyricController.m in Sources */,
+				CE846F3C1CE9654A00FF26DB /* HITReadColumnStrategyProvider.m in Sources */,
 				CE5BA6871CD711C9001DB6C2 /* ONESerialContentListTransition.m in Sources */,
 				CE5BA70F1CD8C7AA001DB6C2 /* DOUEAGLView.m in Sources */,
 				CEC96FF31CBFFF76005CA17E /* ONEMovieReview.m in Sources */,
@@ -1350,6 +1460,7 @@
 				CE5BA7081CD8C7AA001DB6C2 /* DOUAudioLPCM.m in Sources */,
 				CE1D72FF1CD3125000E63CC1 /* ONEEssayReadingController.m in Sources */,
 				CED2750B1CCA3DAE0009D77D /* NHLinearPartition.m in Sources */,
+				CEC5FAC41CE87C6B00E6FD3E /* HITReadColumnIndexPage.m in Sources */,
 				CE6B594D1CC079DA00F9A76B /* ONEElephantArticleBrief.m in Sources */,
 				CEA2D1411CDDE08D00A8C866 /* RTSpinKitArcAltAnimation.m in Sources */,
 				CEC96FCC1CBFB3F8005CA17E /* ONESerialDescription.m in Sources */,
@@ -1365,11 +1476,13 @@
 				CEBCAE901CC489450009398C /* HLTreeView.m in Sources */,
 				CEC96FD81CBFBB83005CA17E /* ONESerialListItem.m in Sources */,
 				CEA2D14B1CDDE08D00A8C866 /* RTSpinKitThreeBounceAnimation.m in Sources */,
+				CEC5FABD1CE84DA700E6FD3E /* HITReadColunmFooter.m in Sources */,
 				CE6B595B1CC09BA600F9A76B /* YYDiskCache.m in Sources */,
 				CED2750A1CCA3DAE0009D77D /* NHBalancedFlowLayout.m in Sources */,
 				CE4CCFAD1CCB59A5004B1E26 /* ONEReadingController.m in Sources */,
 				CE63B8D81CB62D1700E9FAFA /* HITSlideController.m in Sources */,
 				CE2C2E8E1CC0E7EF00001DC1 /* ONEDBManager.m in Sources */,
+				CE67282B1CE6C8860001D5A7 /* HITReadColumnEditorController.m in Sources */,
 				CE5BA68A1CD76A6D001DB6C2 /* ONESerialContentListTableController.m in Sources */,
 				CEC96FD21CBFB81C005CA17E /* ONEEssay.m in Sources */,
 				CE5BA7051CD8C7AA001DB6C2 /* DOUAudioFilePreprocessor.m in Sources */,
@@ -1387,6 +1500,7 @@
 				CE6B59491CC077B000F9A76B /* ONELyric.m in Sources */,
 				CE2325941CAE5B8A00E766F2 /* HITReuseQueue.m in Sources */,
 				CEC77EF91CCF0FBD00FE16D9 /* ONEBarButtonComments.m in Sources */,
+				CEC5FAB71CE80F4300E6FD3E /* HITReadColunmHeader.m in Sources */,
 				CEC96FC91CBFAD10005CA17E /* ONEEssayDescription.m in Sources */,
 				CEE4C0151CBF43E700D81480 /* ONEPainting.m in Sources */,
 				CE5BA7151CD8F4FE001DB6C2 /* ONEFMPlayer.m in Sources */,
@@ -1407,6 +1521,7 @@
 				CE5BA7111CD8C7AA001DB6C2 /* DOUSimpleHTTPRequest.m in Sources */,
 				CE71C5671CBE5DD5006A7AEF /* YYClassInfo.m in Sources */,
 				CEA2D1451CDDE08D00A8C866 /* RTSpinKitCircleAnimation.m in Sources */,
+				CEF0B6511CE9C31900BC29A4 /* HITReadColumnQuestionStrategy.m in Sources */,
 				CE5BA6931CD8B5F7001DB6C2 /* ONEFMRootController.m in Sources */,
 				CE71C55A1CBE2EBB006A7AEF /* HLArrowView.m in Sources */,
 				CE5BA66C1CD5E889001DB6C2 /* ONEQuestionReadingController.m in Sources */,
@@ -1420,8 +1535,10 @@
 				CE5BA7061CD8C7AA001DB6C2 /* DOUAudioFileProvider.m in Sources */,
 				CEC96FF61CC00115005CA17E /* ONEReadingComment.m in Sources */,
 				CE5BA7041CD8C7AA001DB6C2 /* DOUAudioEventLoop.m in Sources */,
+				CEAD21D91CE62FCB00D4FEF5 /* HITReadColumnProvider.m in Sources */,
 				CE5BA7091CD8C7AA001DB6C2 /* DOUAudioPlaybackItem.m in Sources */,
 				CE5BA7021CD8C7AA001DB6C2 /* DOUAudioAnalyzer+Default.m in Sources */,
+				CEAD21D81CE62FCB00D4FEF5 /* HITScrollSegmentItem.m in Sources */,
 				CE1D73031CD3597200E63CC1 /* ONEReadingIndexCell.m in Sources */,
 				CEC77EFE1CCF1A7800FE16D9 /* ONEBarButtonAudioPlay.m in Sources */,
 				CEC96FF91CC00257005CA17E /* ONEUser.m in Sources */,
@@ -1435,8 +1552,11 @@
 				CEA2D11A1CDDDDAE00A8C866 /* ONEFMLyricCell.m in Sources */,
 				CEB71F271CDAF94700437734 /* ONEFMProgressTrackLayer.m in Sources */,
 				CEA2D1471CDDE08D00A8C866 /* RTSpinKitFadingCircleAltAnimation.m in Sources */,
+				CEF0B64B1CE974D000BC29A4 /* HITReadColumnEssayStrategy.m in Sources */,
 				CE6B595A1CC09BA600F9A76B /* YYCache.m in Sources */,
 				CEA2D1481CDDE08D00A8C866 /* RTSpinKitFadingCircleAnimation.m in Sources */,
+				CEAD21D71CE62FCB00D4FEF5 /* HITScrollSegmentView.m in Sources */,
+				CEF0B64E1CE9C0CF00BC29A4 /* HITReadColumnSerialStrategy.m in Sources */,
 				CE75599C1CE3F05F00B07818 /* ONESearchController.m in Sources */,
 				CE5BA6961CD8B679001DB6C2 /* ONEFMPanelController.m in Sources */,
 				CE25A9BE1CD4E1C300DBC1A3 /* ONEReadingIndexController.m in Sources */,

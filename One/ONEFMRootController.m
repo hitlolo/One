@@ -19,8 +19,9 @@ static void *rootFMStatusKVOKey = &rootFMStatusKVOKey;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) IBOutlet UIStackView *buttonStack;
 @property (strong, nonatomic) IBOutlet UIButton *skipButton;
-
 @property (strong, nonatomic) IBOutlet UIButton *nextButton;
+
+@property (strong, nonatomic) DOUAudioVisualizer *visualizer;
 @end
 
 @implementation ONEFMRootController
@@ -43,8 +44,8 @@ static void *rootFMStatusKVOKey = &rootFMStatusKVOKey;
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [[ONEFMPlayer sharedPlayer]addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:rootFMStatusKVOKey];
-    
+    [[ONEFMPlayer sharedPlayer]addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial context:rootFMStatusKVOKey];
+
     //远程控制中心
     //[[UIApplication sharedApplication]beginReceivingRemoteControlEvents];
     //[self becomeFirstResponder];
@@ -52,7 +53,6 @@ static void *rootFMStatusKVOKey = &rootFMStatusKVOKey;
 
 - (void)viewWillDisappear:(BOOL)animated{
     [[ONEFMPlayer sharedPlayer]removeObserver:self forKeyPath:@"status" context:rootFMStatusKVOKey];
-    
     // 停止接受远程控制事件
     //[[UIApplication sharedApplication] endReceivingRemoteControlEvents];
     //[self resignFirstResponder];
@@ -61,13 +61,14 @@ static void *rootFMStatusKVOKey = &rootFMStatusKVOKey;
 
 - (void)prepareDouVisualizer{
     
-    DOUAudioVisualizer *visualizer = [[DOUAudioVisualizer alloc]initWithFrame:_contentView.bounds];
+    _visualizer= [[DOUAudioVisualizer alloc]initWithFrame:_contentView.bounds];
     
 //    [visualizer setBackgroundColor:[UIColor colorWithRed:239.0 / 255.0
 //                                                   green:244.0 / 255.0
 //                                                    blue:240.0 / 255.0
 //                                                   alpha:0.2]];
-    [self.contentView addSubview:visualizer];
+    [self.contentView addSubview:_visualizer];
+    
     //[self.view bringSubviewToFront:self.buttonStack];
 }
 
@@ -120,7 +121,6 @@ static void *rootFMStatusKVOKey = &rootFMStatusKVOKey;
     switch (status) {
             
         case FMPlaying:{
-            
             [self enableButtons];
         }
             break;

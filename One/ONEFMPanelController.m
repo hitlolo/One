@@ -57,6 +57,10 @@ static void *panelDurationKVOKey = &panelDurationKVOKey;
     [oneTap addTarget:self action:@selector(albumCoverTaped:)];
     [self.albumCoverImage addGestureRecognizer:oneTap];
     
+  
+    
+    
+    [self registerKVO];
 }
 
 - (void)dealloc{
@@ -65,7 +69,7 @@ static void *panelDurationKVOKey = &panelDurationKVOKey;
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self registerKVO];
+   
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -96,10 +100,11 @@ static void *panelDurationKVOKey = &panelDurationKVOKey;
     
 }
 
-- (void)viewDidDisappear:(BOOL)animated{
+- (void)viewWillDisappear:(BOOL)animated{
+ 
     [self.progressTimer invalidate];
     self.progressTimer = nil;
-    [super viewDidDisappear:animated];
+    [super viewWillDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -288,7 +293,6 @@ static void *panelDurationKVOKey = &panelDurationKVOKey;
 
 - (void)updateProgress{
     NSTimeInterval duration = [[ONEFMPlayer sharedPlayer]playedTime];
-    //NSLog(@"%f",duration);
     CGFloat progress = duration/self.currentSongLength;
     [self.albumProgressImage setProgress:progress];
 }

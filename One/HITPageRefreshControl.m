@@ -90,7 +90,7 @@ typedef NS_ENUM(NSInteger, HITRefreshState) {
         return;
     }
     self.scrollView = [self getScrollViewFromParent:newSuperview];
-    [self.scrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+    //[self.scrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
     [self removeGestureFromSuperview];
     [self addGestureOnView:newSuperview];
     //ajust the original frame
@@ -104,10 +104,10 @@ typedef NS_ENUM(NSInteger, HITRefreshState) {
     [self setProgress:0.0f];
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
-    CGPoint offset = [[change objectForKey:NSKeyValueChangeNewKey]CGPointValue];
-    NSLog(@"%f",offset.x);
-}
+//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
+//    CGPoint offset = [[change objectForKey:NSKeyValueChangeNewKey]CGPointValue];
+//    NSLog(@"%f",offset.x);
+//}
 
 - (void)addGestureOnView:(UIView*)view{
     [view addGestureRecognizer:self.panGesture];
